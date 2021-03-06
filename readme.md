@@ -10,6 +10,23 @@ $ source runclearn.sh
 
 以latex方式输出大多数高校的校徽(中国)
 
+# 使用方法
+
+下载该文件并解决,把主文件放到与`chinaschoolbadge.sty`文件同目录即可.然后加载`chinaschoolbadge`宏包后, 直接`\fa***` 即可,一个demo 如下: 主要校徽大小与设置有关系
+
+```
+\documentclass{article}
+\usepackage{chinaschoolbadge}
+\begin{document}
+
+    \Huge \faNcu
+\end{document}
+```
+
+显示结果如下:
+
+![image-20210306232544533](../../Library/Application%20Support/typora-user-images/image-20210306232544533.png)
+
 # 字体来源
 
 字体文件来源：  http://xiaohui.lovefc.cn/
@@ -18,7 +35,9 @@ $ source runclearn.sh
 # 基本思路
 
 利用python 自动生成中国高校校徽--latex：
+
 制作方法： https://github.com/srikanthy/faXeTeX
+
 字体文件来源：  http://xiaohui.lovefc.cn/
 
 准备：
