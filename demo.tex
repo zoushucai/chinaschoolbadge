@@ -10,11 +10,12 @@
 \documentclass{article}
 \usepackage{chinaschoolbadge}
 
-
+\newcommand\enlargeFa[1]{\fontsize{100}{100}\selectfont #1}
+\usepackage{xcolor}
+\definecolor{myblue}{RGB}{31,37,85} 
 \begin{document}
 
-    \Huge \faNcu
-
+    \enlargeFa{\faNcu \color{myblue} \enlargeFa{\faNcu}}
     
 
 \end{document}

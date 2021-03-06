@@ -17,15 +17,21 @@ $ source runclearn.sh
 ```
 \documentclass{article}
 \usepackage{chinaschoolbadge}
+
+\newcommand\enlargeFa[1]{\fontsize{100}{100}\selectfont #1}
+\usepackage{xcolor}
+\definecolor{myblue}{RGB}{31,37,85} 
 \begin{document}
 
-    \Huge \faNcu
+    \enlargeFa{\faNcu \color{myblue} \enlargeFa{\faNcu}}
+    
+
 \end{document}
 ```
 
 显示结果如下:
 
-![image-20210306232544533](../../Library/Application%20Support/typora-user-images/image-20210306232544533.png)
+![image-20210306233313510](https://gitee.com/zscqsmy/blogimg/raw/master/uPic/202103062333image-20210306233313510.png)
 
 # 字体来源
 
