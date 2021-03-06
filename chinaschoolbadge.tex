@@ -1,0 +1,164 @@
+
+% Package: fachinaschoolbadge v1.0
+% Author: zoushucai
+% GitHub: https://github.com/zoushucai/chinaschoolbadge/
+% The font comes from the website:  http://xiaohui.lovefc.cn/
+% Please compile with XeLaTeX
+% chinaschoolbadge.tex - Demo for chinaschoolbadge %%
+%% Last Modified: 2021-03-07 %%
+
+\documentclass{article}
+\usepackage[colorlinks,linkcolor=red]{hyperref}
+
+\usepackage{chinaschoolbadge}
+\usepackage{longtable}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+
+\newgeometry{left=1.0cm,right=1.0cm,top=2.0cm,bottom=2.0cm}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{The font comes from the website: \url{http://xiaohui.lovefc.cn/}}
+\fancyhead[R]{chinaschoolbadge v1.0 for Xe\TeX}
+\fancyfoot{}
+\fancyfoot[L]{chinaschoolbadge \enspace v1.0}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\today}
+
+
+\newcommand\enlargeFa[1]{\fontsize{100}{100}\selectfont #1}
+\begin{document}
+
+
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+\renewcommand\arraystretch{3.5}
+\Huge
+\begin{longtable}{@{\extracolsep{\fill}}|cl|cl|@{}}
+    \hline
+    \textbf{ \huge Icon} & \textbf{ \huge Command} & \textbf{ \huge Icon} & \textbf{\huge Command}  \\  \hline
+    \endfirsthead
+    \enlargeFa{ \faNcu } & \textbackslash faNcu &  \enlargeFa{ \faJci } & \textbackslash faJci \\ \hline 
+    \enlargeFa{ \faNju } & \textbackslash faNju &  \enlargeFa{ \faTsinghua } & \textbackslash faTsinghua \\ \hline 
+    \enlargeFa{ \faPku } & \textbackslash faPku &  \enlargeFa{ \faAhu } & \textbackslash faAhu \\ \hline 
+    \enlargeFa{ \faXmu } & \textbackslash faXmu &  \enlargeFa{ \faUjs } & \textbackslash faUjs \\ \hline 
+    \enlargeFa{ \faZju } & \textbackslash faZju &  \enlargeFa{ \faScu } & \textbackslash faScu \\ \hline 
+    \enlargeFa{ \faHenu } & \textbackslash faHenu &  \enlargeFa{ \faHbu } & \textbackslash faHbu \\ \hline 
+    \enlargeFa{ \faNeu } & \textbackslash faNeu &  \enlargeFa{ \faShu } & \textbackslash faShu \\ \hline 
+    \enlargeFa{ \faCqu } & \textbackslash faCqu &  \enlargeFa{ \faCdu } & \textbackslash faCdu \\ \hline 
+    \enlargeFa{ \faHubu } & \textbackslash faHubu &  \enlargeFa{ \faSdu } & \textbackslash faSdu \\ \hline 
+    \enlargeFa{ \faSxu } & \textbackslash faSxu &  \enlargeFa{ \faSysu } & \textbackslash faSysu \\ \hline 
+    \enlargeFa{ \faTju } & \textbackslash faTju &  \enlargeFa{ \faYnu } & \textbackslash faYnu \\ \hline 
+    \enlargeFa{ \faHnu } & \textbackslash faHnu &  \enlargeFa{ \faQhu } & \textbackslash faQhu \\ \hline 
+    \enlargeFa{ \faGzu } & \textbackslash faGzu &  \enlargeFa{ \faUtibet } & \textbackslash faUtibet \\ \hline 
+    \enlargeFa{ \faLzu } & \textbackslash faLzu &  \enlargeFa{ \faImu } & \textbackslash faImu \\ \hline 
+    \enlargeFa{ \faXju } & \textbackslash faXju &  \enlargeFa{ \faFzu } & \textbackslash faFzu \\ \hline 
+    \enlargeFa{ \faJlu } & \textbackslash faJlu &  \enlargeFa{ \faHit } & \textbackslash faHit \\ \hline 
+    \enlargeFa{ \faWhu } & \textbackslash faWhu &  \enlargeFa{ \faNxu } & \textbackslash faNxu \\ \hline 
+    \enlargeFa{ \faSjtu } & \textbackslash faSjtu &  \enlargeFa{ \faFudan } & \textbackslash faFudan \\ \hline 
+    \enlargeFa{ \faUstc } & \textbackslash faUstc &  \enlargeFa{ \faSeu } & \textbackslash faSeu \\ \hline 
+    \enlargeFa{ \faXjtu } & \textbackslash faXjtu &  \enlargeFa{ \faSnnu } & \textbackslash faSnnu \\ \hline 
+    \enlargeFa{ \faCumt } & \textbackslash faCumt &  \enlargeFa{ \faRuc } & \textbackslash faRuc \\ \hline 
+    \enlargeFa{ \faCau } & \textbackslash faCau &  \enlargeFa{ \faCuc } & \textbackslash faCuc \\ \hline 
+    \enlargeFa{ \faCupl } & \textbackslash faCupl &  \enlargeFa{ \faCufe } & \textbackslash faCufe \\ \hline 
+    \enlargeFa{ \faMuc } & \textbackslash faMuc &  \enlargeFa{ \faTongji } & \textbackslash faTongji \\ \hline 
+    \enlargeFa{ \faBnu } & \textbackslash faBnu &  \enlargeFa{ \faSuda } & \textbackslash faSuda \\ \hline 
+    \enlargeFa{ \faBuaa } & \textbackslash faBuaa &  \enlargeFa{ \faDlut } & \textbackslash faDlut \\ \hline 
+    \enlargeFa{ \faBit } & \textbackslash faBit &  \enlargeFa{ \faNwpu } & \textbackslash faNwpu \\ \hline 
+    \enlargeFa{ \faEcnu } & \textbackslash faEcnu &  \enlargeFa{ \faCug } & \textbackslash faCug \\ \hline 
+    \enlargeFa{ \faEcust } & \textbackslash faEcust &  \enlargeFa{ \faZzu } & \textbackslash faZzu \\ \hline 
+    \enlargeFa{ \faNuaa } & \textbackslash faNuaa &  \enlargeFa{ \faNjau } & \textbackslash faNjau \\ \hline 
+    \enlargeFa{ \faUestc } & \textbackslash faUestc &  \enlargeFa{ \faNwsuaf } & \textbackslash faNwsuaf \\ \hline 
+    \enlargeFa{ \faSwu } & \textbackslash faSwu &  \enlargeFa{ \faWhut } & \textbackslash faWhut \\ \hline 
+    \enlargeFa{ \faNjust } & \textbackslash faNjust &  \enlargeFa{ \faUstb } & \textbackslash faUstb \\ \hline 
+    \enlargeFa{ \faJiangnan } & \textbackslash faJiangnan &  \enlargeFa{ \faBuct } & \textbackslash faBuct \\ \hline 
+    \enlargeFa{ \faCcnu } & \textbackslash faCcnu &  \enlargeFa{ \faHzau } & \textbackslash faHzau \\ \hline 
+    \enlargeFa{ \faNjnu } & \textbackslash faNjnu &  \enlargeFa{ \faXidian } & \textbackslash faXidian \\ \hline 
+    \enlargeFa{ \faHhu } & \textbackslash faHhu &  \enlargeFa{ \faJnu } & \textbackslash faJnu \\ \hline 
+    \enlargeFa{ \faBjtu } & \textbackslash faBjtu &  \enlargeFa{ \faNcepu } & \textbackslash faNcepu \\ \hline 
+    \enlargeFa{ \faNenu } & \textbackslash faNenu &  \enlargeFa{ \faZjut } & \textbackslash faZjut \\ \hline 
+    \enlargeFa{ \faYzu } & \textbackslash faYzu &  \enlargeFa{ \faCcmu } & \textbackslash faCcmu \\ \hline 
+    \enlargeFa{ \faScnu } & \textbackslash faScnu &  \enlargeFa{ \faHfut } & \textbackslash faHfut \\ \hline 
+    \enlargeFa{ \faNjtech } & \textbackslash faNjtech &  \enlargeFa{ \faNwu } & \textbackslash faNwu \\ \hline 
+    \enlargeFa{ \faUsst } & \textbackslash faUsst &  \enlargeFa{ \faDhu } & \textbackslash faDhu \\ \hline 
+    \enlargeFa{ \faBupt } & \textbackslash faBupt &  \enlargeFa{ \faUpc } & \textbackslash faUpc \\ \hline 
+    \enlargeFa{ \faCup } & \textbackslash faCup &  \enlargeFa{ \faNuist } & \textbackslash faNuist \\ \hline 
+    \enlargeFa{ \faScau } & \textbackslash faScau &  \enlargeFa{ \faNbu } & \textbackslash faNbu \\ \hline 
+    \enlargeFa{ \faZuel } & \textbackslash faZuel &  \enlargeFa{ \faBjfu } & \textbackslash faBjfu \\ \hline 
+    \enlargeFa{ \faCmu } & \textbackslash faCmu &  \enlargeFa{ \faZjnu } & \textbackslash faZjnu \\ \hline 
+    \enlargeFa{ \faNjupt } & \textbackslash faNjupt &  \enlargeFa{ \faYsu } & \textbackslash faYsu \\ \hline 
+    \enlargeFa{ \faShufe } & \textbackslash faShufe &  \enlargeFa{ \faCnu } & \textbackslash faCnu \\ \hline 
+    \enlargeFa{ \faQdu } & \textbackslash faQdu &  \enlargeFa{ \faKmust } & \textbackslash faKmust \\ \hline 
+    \enlargeFa{ \faHunnu } & \textbackslash faHunnu &  \enlargeFa{ \faSzu } & \textbackslash faSzu \\ \hline 
+    \enlargeFa{ \faXtu } & \textbackslash faXtu &  \enlargeFa{ \faSwufe } & \textbackslash faSwufe \\ \hline 
+    \enlargeFa{ \faHrbmu } & \textbackslash faHrbmu &  \enlargeFa{ \faCpu } & \textbackslash faCpu \\ \hline 
+    \enlargeFa{ \faCqmu } & \textbackslash faCqmu &  \enlargeFa{ \faTyut } & \textbackslash faTyut \\ \hline 
+    \enlargeFa{ \faUjn } & \textbackslash faUjn &  \enlargeFa{ \faWmu } & \textbackslash faWmu \\ \hline 
+    \enlargeFa{ \faUibe } & \textbackslash faUibe &  \enlargeFa{ \faSicau } & \textbackslash faSicau \\ \hline 
+    \enlargeFa{ \faGxu } & \textbackslash faGxu &  \enlargeFa{ \faGdut } & \textbackslash faGdut \\ \hline 
+    \enlargeFa{ \faShnu } & \textbackslash faShnu &  \enlargeFa{ \faTijmu } & \textbackslash faTijmu \\ \hline 
+    \enlargeFa{ \faZstu } & \textbackslash faZstu &  \enlargeFa{ \faHlju } & \textbackslash faHlju \\ \hline 
+    \enlargeFa{ \faNtu } & \textbackslash faNtu &  \enlargeFa{ \faChd } & \textbackslash faChd \\ \hline 
+    \enlargeFa{ \faSdnu } & \textbackslash faSdnu &  \enlargeFa{ \faXznu } & \textbackslash faXznu \\ \hline 
+    \enlargeFa{ \faSdau } & \textbackslash faSdau &  \enlargeFa{ \faNwnu } & \textbackslash faNwnu \\ \hline 
+    \enlargeFa{ \faDufe } & \textbackslash faDufe &  \enlargeFa{ \faHtu } & \textbackslash faHtu \\ \hline 
+    \enlargeFa{ \faHqu } & \textbackslash faHqu &  \enlargeFa{ \faNjfu } & \textbackslash faNjfu \\ \hline 
+    \enlargeFa{ \faHznu } & \textbackslash faHznu &  \enlargeFa{ \faAhnu } & \textbackslash faAhnu \\ \hline 
+    \enlargeFa{ \faHdu } & \textbackslash faHdu &  \enlargeFa{ \faFafu } & \textbackslash faFafu \\ \hline 
+    \enlargeFa{ \faJxnu } & \textbackslash faJxnu &  \enlargeFa{ \faJxufe } & \textbackslash faJxufe \\ \hline 
+    \enlargeFa{ \faNjucm } & \textbackslash faNjucm &  \enlargeFa{ \faGdufs } & \textbackslash faGdufs \\ \hline 
+    \enlargeFa{ \faHpu } & \textbackslash faHpu &  \enlargeFa{ \faSdust } & \textbackslash faSdust \\ \hline 
+    \enlargeFa{ \faWust } & \textbackslash faWust &  \enlargeFa{ \faHaust } & \textbackslash faHaust \\ \hline 
+    \enlargeFa{ \faSwupl } & \textbackslash faSwupl &  \enlargeFa{ \faLnu } & \textbackslash faLnu \\ \hline 
+    \enlargeFa{ \faBucm } & \textbackslash faBucm &  \enlargeFa{ \faHzic } & \textbackslash faHzic \\ \hline 
+    \enlargeFa{ \faXauat } & \textbackslash faXauat &  \enlargeFa{ \faNuc } & \textbackslash faNuc \\ \hline 
+    \enlargeFa{ \faCczu } & \textbackslash faCczu &  \enlargeFa{ \faXaut } & \textbackslash faXaut \\ \hline 
+    \enlargeFa{ \faHrbnu } & \textbackslash faHrbnu &  \enlargeFa{ \faEcupl } & \textbackslash faEcupl \\ \hline 
+    \enlargeFa{ \faTjnu } & \textbackslash faTjnu &  \enlargeFa{ \faDlmu } & \textbackslash faDlmu \\ \hline 
+    \enlargeFa{ \faShzu } & \textbackslash faShzu &  \enlargeFa{ \faShutcm } & \textbackslash faShutcm \\ \hline 
+    \enlargeFa{ \faBfsu } & \textbackslash faBfsu &  \enlargeFa{ \faSicnu } & \textbackslash faSicnu \\ \hline 
+    \enlargeFa{ \faHebut } & \textbackslash faHebut &  \enlargeFa{ \faTjpu } & \textbackslash faTjpu \\ \hline 
+    \enlargeFa{ \faShisu } & \textbackslash faShisu &  \enlargeFa{ \faHainanu } & \textbackslash faHainanu \\ \hline 
+    \enlargeFa{ \faSwpu } & \textbackslash faSwpu &  \enlargeFa{ \faCtgu } & \textbackslash faCtgu \\ \hline 
+    \enlargeFa{ \faHunau } & \textbackslash faHunau &  \enlargeFa{ \faLnnu } & \textbackslash faLnnu \\ \hline 
+    \enlargeFa{ \faQfnu } & \textbackslash faQfnu &  \enlargeFa{ \faGzhu } & \textbackslash faGzhu \\ \hline 
+    \enlargeFa{ \faSust } & \textbackslash faSust &  \enlargeFa{ \faScuec } & \textbackslash faScuec \\ \hline 
+    \enlargeFa{ \faSdut } & \textbackslash faSdut &  \enlargeFa{ \faFjmu } & \textbackslash faFjmu \\ \hline 
+    \enlargeFa{ \faGzucm } & \textbackslash faGzucm &  \enlargeFa{ \faHrbust } & \textbackslash faHrbust \\ \hline 
+    \enlargeFa{ \faLntu } & \textbackslash faLntu &  \enlargeFa{ \faCqupt } & \textbackslash faCqupt \\ \hline 
+    \enlargeFa{ \faDmu } & \textbackslash faDmu &  \enlargeFa{ \faHenau } & \textbackslash faHenau \\ \hline 
+    \enlargeFa{ \faGzhmu } & \textbackslash faGzhmu &  \enlargeFa{ \faSyphu } & \textbackslash faSyphu \\ \hline 
+    \enlargeFa{ \faHnust } & \textbackslash faHnust &  \enlargeFa{ \faSwust } & \textbackslash faSwust \\ \hline 
+    \enlargeFa{ \faSdufe } & \textbackslash faSdufe &  \enlargeFa{ \faCsust } & \textbackslash faCsust \\ \hline 
+    \enlargeFa{ \faLut } & \textbackslash faLut &  \enlargeFa{ \faCdut } & \textbackslash faCdut \\ \hline 
+    \enlargeFa{ \faCjlu } & \textbackslash faCjlu &  \enlargeFa{ \faHebmu } & \textbackslash faHebmu \\ \hline 
+    \enlargeFa{ \faHebtu } & \textbackslash faHebtu &  \enlargeFa{ \faYangtzeu } & \textbackslash faYangtzeu \\ \hline 
+    \enlargeFa{ \faTjut } & \textbackslash faTjut &  \enlargeFa{ \faQau } & \textbackslash faQau \\ \hline 
+    \enlargeFa{ \faGxnu } & \textbackslash faGxnu &  \enlargeFa{ \faJust } & \textbackslash faJust \\ \hline 
+    \enlargeFa{ \faCueb } & \textbackslash faCueb &  \enlargeFa{ \faAhut } & \textbackslash faAhut \\ \hline 
+    \enlargeFa{ \faWzu } & \textbackslash faWzu &  \enlargeFa{ \faHebau } & \textbackslash faHebau \\ \hline 
+    \enlargeFa{ \faCust } & \textbackslash faCust &  \enlargeFa{ \faGxmu } & \textbackslash faGxmu \\ \hline 
+    \enlargeFa{ \faYnnu } & \textbackslash faYnnu &  \enlargeFa{ \faCauc } & \textbackslash faCauc \\ \hline 
+    \enlargeFa{ \faUcas } & \textbackslash faUcas &  \enlargeFa{ \faCtbu } & \textbackslash faCtbu \\ \hline 
+    \enlargeFa{ \faUsc } & \textbackslash faUsc &  \enlargeFa{ \faNcst } & \textbackslash faNcst \\ \hline 
+    \enlargeFa{ \faZhku } & \textbackslash faZhku &  \enlargeFa{ \faZstu } & \textbackslash faZstu \\ \hline 
+    \enlargeFa{ \faBtbu } & \textbackslash faBtbu &  \enlargeFa{ \faGdmu } & \textbackslash faGdmu \\ \hline 
+    \enlargeFa{ \faNufe } & \textbackslash faNufe &  \enlargeFa{ \faJzu } & \textbackslash faJzu \\ \hline 
+    \enlargeFa{ \faSdmu } & \textbackslash faSdmu &  \enlargeFa{ \faXatu } & \textbackslash faXatu \\ \hline 
+    \enlargeFa{ \faAhmu } & \textbackslash faAhmu &  \enlargeFa{ \faZwu } & \textbackslash faZwu \\ \hline 
+    \enlargeFa{ \faHist } & \textbackslash faHist &  \enlargeFa{ \faSyau } & \textbackslash faSyau \\ \hline 
+    \enlargeFa{ \faOuc } & \textbackslash faOuc &  \enlargeFa{ \faUcass } & \textbackslash faUcass \\ \hline 
+    \enlargeFa{ \faNankai } & \textbackslash faNankai &  \enlargeFa{ \faNudt } & \textbackslash faNudt \\ \hline 
+    \enlargeFa{ \faCsu } & \textbackslash faCsu &  \enlargeFa{ \faHust } & \textbackslash faHust \\ \hline 
+    \enlargeFa{ \faScut } & \textbackslash faScut &  \enlargeFa{ \faGliet } & \textbackslash faGliet \\ \hline 
+    \enlargeFa{ \faSwjtu } & \textbackslash faSwjtu &  \enlargeFa{ \faCwu } & \textbackslash faCwu \\ \hline 
+    \enlargeFa{ \faBhu } & \textbackslash faBhu &  \enlargeFa{ \faAhau } & \textbackslash faAhau \\ \hline 
+    \enlargeFa{ \faTust } & \textbackslash faTust &  \enlargeFa{ \faHncj } & \textbackslash faHncj \\ \hline 
+    \enlargeFa{ \faFjut } & \textbackslash faFjut &  \enlargeFa{ \faDzu } & \textbackslash faDzu \\ \hline 
+    \enlargeFa{ \faWfmc } & \textbackslash faWfmc &  \enlargeFa{ \faHuas } & \textbackslash faHuas \\ \hline 
+    \enlargeFa{ \faLit } & \textbackslash faLit &  \enlargeFa{ \faSlu } & \textbackslash faSlu \\ \hline 
+\end{longtable}
+
+\end{document}
+
