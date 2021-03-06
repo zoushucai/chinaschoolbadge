@@ -12,7 +12,7 @@ $ source runclearn.sh
 
 # 使用方法
 
-下载该文件并解决,把主文件放到与`chinaschoolbadge.sty`文件同目录即可.然后加载`chinaschoolbadge`宏包后, 直接`\fa***` 即可,一个demo 如下: 主要校徽大小与设置有关系
+下载该文件并解决, 把tex主文件放到与`chinaschoolbadge.sty`文件同目录即可. 然后加载`chinaschoolbadge`宏包后, 直接`\fa***` 即可,一个demo 如下:  校徽大小与设置有关系
 
 ```
 \documentclass{article}
@@ -52,5 +52,19 @@ $ source runclearn.sh
 2. 把解压后的`css`文件下的所有内容放入一个自定义的空目录中即可，并把`font`目录改为`fonts`
 3. 通过字体转换网站，把`fonts`目录下的字体转为 `otf或ttf`类型的字体
     这里转为`ttf`文件：  https://www.fontke.com/tool/convfont/ , **otf会报错？？不知道怎么回事**
-4. 把该py文件也放入该目录中即可
-5. 运行该py文件，会生成 `chinaschoolbadge.sty` 和 `chinaschoolbadge.tex`
+4. 把`main.py`文件也放入该目录中
+5. 运行`main.py`文件，会生成 `chinaschoolbadge.sty` 和 `chinaschoolbadge.tex`
+6. 然后运行`chinaschoolbadge.tex`文件即可
+
+或者直接下载在当前目录下利用终端运行,即可生成所有文件
+
+```bash
+$ source runclearn.sh 
+```
+
+# 备用地址
+
+[gitee地址](https://gitee.com/zscqsmy/chinaschoolbadge)
+
+[github地址](https://github.com/zoushucai/chinaschoolbadge)
+
