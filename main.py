@@ -88,12 +88,12 @@ s0 = r'''
 %
 % reference:   https://github.com/srikanthy/faXeTeX
 % reference resources from:   http://xiaohui.lovefc.cn/
-% Fonts Directory: ./fonts/
+% Fonts Directory: ./fontset/
 % Usage: \usepackage{fontawesome}
 % If it infringes, please let me know and I will delete it.
 
 \RequirePackage{fontspec}
-\newfontfamily{\FA}[Path = fonts/]{xiaohui.ttf}
+\newfontfamily{\FA}[Path = fontset/]{xiaohui.ttf}
 '''
 
 f=open("chinaschoolbadge.sty","w")

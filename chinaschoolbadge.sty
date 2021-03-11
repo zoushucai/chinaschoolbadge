@@ -8,7 +8,11 @@
 % If it infringes, please let me know and I will delete it.
 
 \RequirePackage{fontspec}
-\newfontfamily{\FA}[Path = fonts/]{xiaohui.ttf}
+
+\RequirePackage{currfile}
+
+
+\newfontfamily{\FA}[Path = \currfiledir]{xiaohui.ttf}
 
 \def\fiNcu{\symbol{"E001}}
 \def\fiJci{\symbol{"E002}}
