@@ -93,9 +93,15 @@ s0 = r'''
 % If it infringes, please let me know and I will delete it.
 
 \RequirePackage{fontspec}
-% \RequirePackage{currfile}
-% \newfontfamily{\FA}[Path = \currfiledir]{xiaohui.ttf}
+
+% load font  --- method 1
+%\RequirePackage[abspath]{currfile}
+%\edef\CurrentFileDir{ \currfileabsdir fontset/}
+%\newfontfamily{\FA}[Path =\CurrentFileDir]{xiaohui.ttf}
+
+% load font  --- method 2
 \newfontfamily{\FA}[Path = fontset/]{xiaohui.ttf}
+
 '''
 
 f=open("chinaschoolbadge.sty","w")
