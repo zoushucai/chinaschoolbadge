@@ -5,8 +5,8 @@
 
 准备：
 1. 下载 从网站下载压缩包并解压 http://xiaohui.lovefc.cn/
-2. 把解压后的css文件下的所有内容放入一个自定义的空目录中即可，并把font目录改为fonts
-3. 通过字体转换网站，把font目录下的字体转为 otf或ttf类型的字体
+2. 把解压后的css文件下的所有内容放入一个自定义的空目录中即可，并把font目录改为fontset
+3. 通过字体转换网站，把fontset目录下的字体转为 otf或ttf类型的字体
     这里转为ttf文件：  https://www.fontke.com/tool/convfont/ , otf会报错？？不知道怎么回事
 4，把该py文件也放入该目录中即可
 5，运行该py文件，会生成 chinaschoolbadge.sty 和 chinaschoolbadge.tex
@@ -18,7 +18,7 @@ import re
 import os
 
 ####  根据字体提取字体的 Unicode编码
-#font = TTFont('./font/xiaohui.otf')
+#font = TTFont('./fontset/xiaohui.otf')
 #kv = font.keys()
 #my_str =font.getGlyphOrder()
 #pattern = "^uni"
@@ -93,6 +93,8 @@ s0 = r'''
 % If it infringes, please let me know and I will delete it.
 
 \RequirePackage{fontspec}
+% \RequirePackage{currfile}
+% \newfontfamily{\FA}[Path = \currfiledir]{xiaohui.ttf}
 \newfontfamily{\FA}[Path = fontset/]{xiaohui.ttf}
 '''
 
