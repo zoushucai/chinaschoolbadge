@@ -25,4 +25,4 @@ fi
 filevar='chinaschoolbadge'
 xelatex -synctex=1 -interaction=nonstopmode -shell-escape ${filevar}.tex
 xelatex -synctex=1 -interaction=nonstopmode -shell-escape ${filevar}.tex
-rm -rf *.log *.out *.synctex.gz *.aux
+rm -rf *.log *.out *.synctex.gz *.aux *.fls

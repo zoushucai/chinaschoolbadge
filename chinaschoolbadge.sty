@@ -15,7 +15,45 @@
 %\newfontfamily{\FA}[Path =\CurrentFileDir]{xiaohui.ttf}
 
 % load font  --- method 2
-\newfontfamily{\FA}[Path = fontset/]{xiaohui.ttf}
+%\newfontfamily{\FA}[Path = fontset/]{xiaohui.ttf}
+
+% load font --- method 3
+
+\newcommand\chinaschoolbadge@error[1]{%
+    \ClassError{chinaschoolbadge}{#1}{}%
+}
+\newcommand\chinaschoolbadge@warning[1]{%
+    \ClassWarning{chinaschoolbadge}{#1}%
+}
+
+\RequirePackage{xkeyval}
+\newcommand{\mypath}{./fontset/}
+
+%1. 取出 style 关键词后面的参数值并重新赋值
+\DeclareOptionX{path}{%
+    \def\mypath{#1}
+}
+\ProcessOptionsX
+
+\newcommand{\newpathone}{\mypath xiaohui.ttf}
+\newcommand{\newpathtwo}{\mypath fontset/xiaohui.ttf}
+\newcommand{\newpaththree}{./fontset/xiaohui.ttfs}
+
+\IfFileExists{\newpathone}{%
+    \newfontfamily{\FA}[Path = \mypath]{xiaohui.ttf}%
+}{%
+   \IfFileExists{\newpathtwo}{%
+        \newfontfamily{\FA}[Path = \mypath fontset/]{xiaohui.ttf}%
+   }{%
+           \IfFileExists{\newpaththree}{%
+            \newfontfamily{\FA}[Path = fontset/]{xiaohui.ttf}%
+        }{%
+        \ClassError{chinaschoolbadge}{"\mypath xiaohui.ttf" does not exist}{}%
+        %\ClassWarning{chinaschoolbadge}{"\mypath xiaohui.ttf" does not exist}%
+    }%
+   }%
+}
+
 
 
 \def\fiNcu{\symbol{"E001}}
